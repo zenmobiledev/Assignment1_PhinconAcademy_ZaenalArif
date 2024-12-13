@@ -1,7 +1,7 @@
 package data
 
 data class Finance(
-    val income: Int,
-    val expense: Int,
-    val information: String
+    val transactionType: TransactionType,
+    val amount: Int?,
+    val information: String?
 )

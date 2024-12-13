@@ -32,32 +32,29 @@ fun main() {
         UI Menu
         Personal Finance Manager Application
          */
-        println("Selamat Datang di Personal Finance Manager Application\nSilakan memilih angka dari 1 sampai 5")
-        println("1. Pemasukan dan Pengeluaran")
-        println("2. Perhitungan Saldo")
-        println("3. Riwayat Transaksi")
-        println("4. Analisis Keuangan")
-        println("5. Keluar")
+        println("Selamat Datang di Personal Finance Manager Application\nSilakan memilih angka dari 1 sampai 6")
+        println("1. Pemasukan")
+        println("2. Pengeluaran")
+        println("3. Perhitungan Saldo")
+        println("4. Riwayat Transaksi")
+        println("5. Analisis Keuangan")
+        println("6. Keluar")
 
         print("Input: ")
         val menu = Convert.stringToInt()
 
         when (menu) {
-            1 -> uiIncomeAndExpense.featureIncomeAndExpense()
+            1 -> uiIncomeAndExpense.incomeFeature()
 
-            2 -> {
-                println("UI Perhitungan Saldo")
-            }
+            2 -> uiIncomeAndExpense.expenseFeature()
 
-            3 -> {
-                println("UI Riwayat Transaksi")
-            }
+            3 -> println("TAMPILAN PERHITUNGAN SALDO")
 
-            4 -> {
-                println("UI Analisis Keuangan")
-            }
+            4 -> println("TAMPILAN RIWAYAT TRANSAKSI")
 
-            5 -> {
+            5 -> println("TAMPILAN ANALISIS KEUANGAN")
+
+            6 -> {
                 println("Keluar Aplikasi.....\nTerima Kasih :)")
                 break
             }
@@ -67,5 +64,5 @@ fun main() {
                 break
             }
         }
-    } while (menu != 5)
+    } while (menu != 6)
 }
