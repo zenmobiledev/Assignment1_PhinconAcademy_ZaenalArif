@@ -19,11 +19,5 @@ class IncomeAndExpense(private val finance: TransactionTracker) {
             amountExp = inputExpense,
             info = inputInformation
         )
-
-        println("""
-            Pemasukan: $inputIncome
-            Pengeluaran: $inputExpense
-            Keterangan: $inputInformation
-        """.trimIndent())
     }
 }
